@@ -1,7 +1,8 @@
 import React from 'react';
-import { Card, Comment, Tooltip, List, Button } from 'antd';
+import { Card, Button } from 'antd';
 import { LikeOutlined } from '@ant-design/icons';
 import './style.css';
+import { EditoraContact } from './contact';
 
 const data = [
     {
@@ -16,7 +17,7 @@ const data = [
 export const EditoraRead = () => {
     return (
         <>
-            <Card title="Dom Casmurro - Capítulo Primeiro" extra={<><LikeOutlined key="like"/> 243</>}>
+            <Card title="Dom Casmurro - Capítulo Primeiro" extra={<><LikeOutlined key="like" /> 243</>}>
                 <div className="container">
                     <div className="text-info">
                         <p>Autor: Machado de Assis</p>
@@ -27,17 +28,17 @@ export const EditoraRead = () => {
                         <a href="#">Contatar autor</a>
                     </div>
                     <div className="text-box">
-                    <p>Uma noite destas, vindo da cidade para o Engenho Novo, encontrei no trem da
+                        <p>Uma noite destas, vindo da cidade para o Engenho Novo, encontrei no trem da
                         Central um rapaz aqui do bairro, que eu conheço de vista e de chapéu.
                         Cumprimentou-me, sentou-se ao pé de mim, falou da Lua e dos ministros, e
                         acabou recitando-me versos. A viagem era curta, e os versos pode ser que não
                         fossem inteiramente maus. Sucedeu, porém, que, como eu estava cansado, fechei
                         os olhos três ou quatro vezes; tanto bastou para que ele interrompesse a leitura e
                         metesse os versos no bolso.</p>
-                    <p>— Continue, disse eu acordando.</p>
-                    <p>— Já acabei, murmurou ele.</p>
-                    <p>— São muito bonitos.</p>
-                    <p>Vi-lhe fazer um gesto para tirá-los outra vez do bolso, mas não passou do gesto;
+                        <p>— Continue, disse eu acordando.</p>
+                        <p>— Já acabei, murmurou ele.</p>
+                        <p>— São muito bonitos.</p>
+                        <p>Vi-lhe fazer um gesto para tirá-los outra vez do bolso, mas não passou do gesto;
                         estava amuado. No dia seguinte entrou a dizer de mim nomes feios, e acabou
                         alcunhando-me Dom Casmurro. Os vizinhos, que não gostam dos meus hábitos
                         reclusos e calados, deram curso à alcunha, que afinal pegou. Nem por isso me
@@ -59,7 +60,8 @@ export const EditoraRead = () => {
                 </div>
 
             </Card>
-            <Button size='middle' type="primary" style={{margin: '16px 0'}}>Voltar</Button>
+            <EditoraContact />
+            <Button size='middle' type="primary" style={{ margin: '16px 0' }}>Voltar</Button>
         </>
     );
 };

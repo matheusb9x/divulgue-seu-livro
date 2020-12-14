@@ -11,6 +11,7 @@ import { EscritorContato } from './pages/escritor/contato';
 import { EditoraHome } from './pages/editora/home/home';
 import { EditoraList } from './pages/editora/list/list';
 import { EditoraRead } from './pages/editora/read/read';
+import { ListaLinks } from "./pages/ListaLinks";
 
 const { Content, Footer, Sider } = Layout;
 
@@ -33,14 +34,10 @@ export const App = () => (
         </Sider>
         <Layout className="site-layout">
           <Content style={{ margin: '16px' }}>
-            {/* <Breadcrumb style={{ margin: '16px 0' }}>
-              <Breadcrumb.Item>User</Breadcrumb.Item>
-              <Breadcrumb.Item>Bill</Breadcrumb.Item>
-            </Breadcrumb>
-            <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-              Bill is a cat.
-            </div> */}
             <Switch>
+              <Route path="/" exact>
+                <ListaLinks />
+              </Route>
               <Route path="/escritor/home">
                 <EscritorHome />
               </Route>
