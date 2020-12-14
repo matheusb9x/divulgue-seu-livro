@@ -1,0 +1,22 @@
+.author-cards-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.author-card{
+    padding: 20px;
+}
+
+.text-card{
+    padding-bottom: 10px;
+}
+
+.text-wrapper{
+    margin-bottom: 18px;
+}
+
+.like-count{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}

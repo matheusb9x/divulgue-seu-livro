@@ -8,6 +8,9 @@ import {
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { EscritorHome } from './pages/escritor/home';
 import { EscritorContato } from './pages/escritor/contato';
+import { EditoraHome } from './pages/editora/home/home';
+import { EditoraList } from './pages/editora/list/list';
+import { EditoraRead } from './pages/editora/read/read';
 
 const { Content, Footer, Sider } = Layout;
 
@@ -43,6 +46,15 @@ export const App = () => (
               </Route>
               <Route path="/escritor/contato">
                 <EscritorContato />
+              </Route>
+              <Route path="/editora/home">
+                <EditoraHome />
+              </Route>
+              <Route path="/editora/list">
+                <EditoraList />
+              </Route>
+              <Route path="/editora/read">
+                <EditoraRead />
               </Route>
             </Switch>
           </Content>
